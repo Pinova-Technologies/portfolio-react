@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const Tool = () => {
     return (
@@ -7,7 +7,10 @@ const Tool = () => {
                 Tools
             </h1>
             <div>
-                h2
+               <h3 className='px-5' style={{ color: 'var(--white, #F2F2F2)'}}>
+               With a wide range of development and collaboration tools, I create dynamic, scalable solutions for modern web applications. My toolkit supports seamless front-end experiences, efficient back-end integration, and smooth project workflows. I’m skilled in CI/CD practices and remote collaboration, ensuring every project is delivered effectively and on time.
+
+               </h3>
             </div>
         </div>
     );

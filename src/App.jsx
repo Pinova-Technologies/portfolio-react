@@ -1,4 +1,4 @@
-import { Button } from './components/ui/button'
+
 import Footer from './Footer'
 import NavBar from './pages/NavBar'
 import Projects from './pages/Projects'
@@ -51,7 +51,7 @@ function App() {
                 lineHeight: '25px'
               }}
             >
-              I'm a frontend developer who builds intuitive <br/>
+              I am a frontend developer who builds intuitive <br/>
                and efficient web interfaces with precision and independence.
               Focused on clean code and seamless user experiences, I transform ideas into bold digital solutions.
             </p>
