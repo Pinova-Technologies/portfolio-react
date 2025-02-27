@@ -2,6 +2,7 @@
 import Footer from './Footer'
 import NavBar from './pages/NavBar'
 import Projects from './pages/Projects'
+import WhyWork from './pages/WhyWork'
 
 function App() {
 
@@ -35,7 +36,8 @@ function App() {
               style={{
                 fontFamily: "'Anta', sans-serif",
                 fontSize: '8rem',
-                fontWeight: 'bold'
+                fontWeight: 'bold',
+                lineHeight: '1' // Adjust this value to reduce the gap
               }}
             >
               Humira <br /><span style={{ fontFamily: "'Anta', sans-serif" }}>Alam</span>
@@ -51,8 +53,8 @@ function App() {
                 lineHeight: '25px'
               }}
             >
-              I am a frontend developer who builds intuitive <br/>
-               and efficient web interfaces with precision and independence.
+              I am a frontend developer who builds intuitive <br />
+              and efficient web interfaces with precision and independence.
               Focused on clean code and seamless user experiences, I transform ideas into bold digital solutions.
             </p>
             <div className="mt-8 flex justify-center space-x-4">
@@ -66,7 +68,8 @@ function App() {
           </div>
         </div>
       </div>
-      <Projects/>
+      <Projects />
+      <WhyWork />
       <Footer />
     </>
   )

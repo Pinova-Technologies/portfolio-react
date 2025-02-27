@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Bootstrap",
+      "icon": "/public/s-card.svg"
+    },
+    {
+      "name": "Tailwind",
+     "icon": "/public/s-card.svg"
+    },
+    {
+      "name": "React",
+      "icon": "/public/s-card.svg"
+    },
+    {
+      "name": "Vue",
+      "icon": "/public/s-card.svg"
+    },
+    {
+      "name": "Angular",
+      "icon": "/public/s-card.svg"
+    },
+    {
+      "name": "Svelte",
+      "icon": "/public/s-card.svg"
+    }
+  ]
+  

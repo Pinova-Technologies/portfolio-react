@@ -2,12 +2,14 @@
 import { Button } from '../components/ui/button';
 import Tool from './Tool';
 import projects from '../data/projects.json'; // Import the JSON data
+import SmallCards from './SmallCards';
+
 
 function Projects() {
   return (
     <div>
       <div className="bg-[#292929] w-full min-h-screen">
-        <h2 className="text-3xl font-bold mb-4">My Projects</h2>
+        <h2 className="text-3xl font-normal  mx-5 mb-4" style={{color:"#F2F2F2"}}>My Projects</h2>
         <div className="project-list flex justify-around pt-[80px]">
           {projects.slice(0, 4).map((project, index) => (
             <div className="project-item" key={index}>
@@ -27,6 +29,7 @@ function Projects() {
           ))}
         </div>
         <Tool />
+       <SmallCards/>
       </div>
     </div>
   );
