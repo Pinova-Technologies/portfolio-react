@@ -1,4 +1,3 @@
-
 import Footer from './Footer'
 import NavBar from './pages/NavBar'
 import Projects from './pages/Projects'
@@ -61,9 +60,9 @@ function App() {
               <button className="bg-[#E6D62D] text-black px-6 py-3 font-semibold rounded-md shadow-md">
                 GET IN TOUCH
               </button>
-              <button className="bg-gray-200 text-black px-6 py-3 font-semibold rounded-md shadow-md">
-                TUTORIALS
-              </button>
+              <a href="/public/CV-Humira-Dev.pdf" download className="bg-gray-200 text-black px-6 py-3 font-semibold rounded-md shadow-md">
+                RESUME
+              </a>
             </div>
           </div>
         </div>

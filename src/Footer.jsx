@@ -85,7 +85,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/humiralam/" target="_blank" rel="noopener noreferrer">
             <BsLinkedin size={32} />
           </a>
-          <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/HumiraAlam/humira-alam" target="_blank" rel="noopener noreferrer">
             <FaGithub size={32} />
           </a>
         </div>
