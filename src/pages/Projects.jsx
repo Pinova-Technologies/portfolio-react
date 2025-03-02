@@ -20,7 +20,7 @@ function Projects() {
   };
 
   return (
-    <div className="bg-[#292929] w-full min-h-screen" >
+    <div  id="projects" className="bg-[#292929] w-full min-h-screen" >
       <div className="">
       <h2 className="text-3xl font-normal mx-5 mb-4 pt-5" style={{ color: "#F2F2F2" }}>My Projects</h2>
         <div className="project-list flex justify-around pt-[80px]">

@@ -38,7 +38,7 @@ const Modal = ({ isOpen, onClose, project }) => {
                         <div key={index} className="p-4 bg-[#292929] rounded-lg">
                             <h3 className="text-lg font-semibold" style={{color: '#F2F2F2'}}>{detail.title}</h3>
                             <p style={{color: '#F2F2F2'}}>{detail.description}</p>
-                            <img src={detail.image} alt={detail.title} className="w-1/2 h-32 object-cover rounded-lg mb-2" />
+                            <img src={detail.image} alt={detail.title} className="w-1/2 h-32 object-cover rounded-lg mb-2" style={{ width: '50%' }} />
                             <div className="flex space-x-4 mt-2">
                                 <a href={detail.liveLink} className="text-[#F2F2F2] font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Live Link</a>
                                 <a href={detail.sourceCodeLink} className="text-[#F2F2F2] border-red-100 rounded-xs hover:underline" target="_blank" rel="noopener noreferrer">Source Code</a>

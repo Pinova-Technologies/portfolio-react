@@ -21,7 +21,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="bg-[#292929] w-full min-h-9/10 flex justify-around">
+    <div id='contact' className="bg-[#292929] w-full min-h-9/10 flex justify-around">
       <div className="shadow-md rounded-lg" style={{ backgroundColor: '#292929' }}>
         <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
         <form onSubmit={sendEmail}>

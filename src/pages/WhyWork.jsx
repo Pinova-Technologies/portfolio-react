@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhyWork = () => {
     return (
-        <div className='flex justify-around  bg-[#292929] w-full min-h-screen'>
+        <div id="why-me" className='flex justify-around  bg-[#292929] w-full min-h-screen'>
             <div className='px-5'>
                 <h2 style={{ color: '#F2F2F2', fontFamily: 'Anta', fontSize: '48px', fontStyle: 'normal', fontWeight: '400', lineHeight: 'normal' }}>
                     Why work with me
