@@ -1,10 +1,12 @@
 import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const Modal = ({ isOpen, onClose, project }) => {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center  ">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
             <div className="bg-[#292929] p-6 rounded-lg w-3/4 max-w-3xl">
                 <div className="flex justify-between items-center mb-4">
                     <button onClick={onClose} className="text-xl">
@@ -31,20 +33,19 @@ const Modal = ({ isOpen, onClose, project }) => {
                 <div className="mb-4">
                     <img src={project.image} alt={project.name} className="w-full h-48 object-cover rounded-lg" />
                 </div>
-                <div className="grid grid-cols-3 gap-4">
+                <Carousel showThumbs={false} showStatus={false} infiniteLoop useKeyboardArrows>
                     {project.details.map((detail, index) => (
-                        <div key={index} className="p-4 bg-[#292929] -100 rounded-lg">
+                        <div key={index} className="p-4 bg-[#292929] rounded-lg">
                             <h3 className="text-lg font-semibold" style={{color: '#F2F2F2'}}>{detail.title}</h3>
-                            <p  style={{color: '#F2F2F2'}}>{detail.description}</p>
-                            <img src={detail.image} alt={detail.title} className="w-full h-32 object-cover rounded-lg mb-2" />
-                            
+                            <p style={{color: '#F2F2F2'}}>{detail.description}</p>
+                            <img src={detail.image} alt={detail.title} className="w-1/2 h-32 object-cover rounded-lg mb-2" />
                             <div className="flex space-x-4 mt-2">
-                                <a href={detail.liveLink} className="text-[#F2F2F2] font-semibold " target="_blank" rel="noopener noreferrer">Live Link</a>
-                                <a href={detail.sourceCodeLink} className="text-[#F2F2F2]  border-red-100 rounded-xs" target="_blank" rel="noopener noreferrer">Source Code</a>
+                                <a href={detail.liveLink} className="text-[#F2F2F2] font-semibold hover:underline" target="_blank" rel="noopener noreferrer">Live Link</a>
+                                <a href={detail.sourceCodeLink} className="text-[#F2F2F2] border-red-100 rounded-xs hover:underline" target="_blank" rel="noopener noreferrer">Source Code</a>
                             </div>
                         </div>
                     ))}
-                </div>
+                </Carousel>
                 <p className='mt-5' style={{ color: '#F2F2F2', fontFamily: 'Lato', fontSize: '18px', fontStyle: 'normal', fontWeight: '400', lineHeight: 'normal' }}>
                     {project.methodology}
                 </p>

@@ -26,6 +26,14 @@
         "liveLink": "https://live-link-to-project-3.com",
         "sourceCodeLink": "https://source-code-link-to-project-3.com"
       }
+      ,
+      {
+        "title": "Project 3",
+        "description": "Description for detail 3",
+        "image": "/path/to/detail3-image.jpg",
+        "liveLink": "https://live-link-to-project-3.com",
+        "sourceCodeLink": "https://source-code-link-to-project-3.com"
+      }
     ]
   },
   {
