@@ -2,8 +2,8 @@
   {
     "name": "HTML/CSS",
     "link": "https://link-to-project-1.com",
-    "image": "/public/js.png",
-    "methodology": "A little info on usage and methodologies for HTML/CSS.",
+    "image": "/public/html-css.jpg",
+    "methodology": "A little info on usage and methodologies for HTML/CSS. A little info on usage and methodologies for HTML/CSS.",
     "details": [
       {
         "title": "Project 1",
@@ -15,14 +15,14 @@
       {
         "title": "Project 2",
         "description": "Description for detail 2",
-        "image": "/path/to/detail2-image.jpg",
+        "image": "/public/category/main.png",
         "liveLink": "https://live-link-to-project-2.com",
         "sourceCodeLink": "https://source-code-link-to-project-2.com"
       },
       {
         "title": "Project 3",
         "description": "Description for detail 3",
-        "image": "/path/to/detail3-image.jpg",
+        "image": "/public/category/main.png",
         "liveLink": "https://live-link-to-project-3.com",
         "sourceCodeLink": "https://source-code-link-to-project-3.com"
       }
@@ -30,7 +30,7 @@
       {
         "title": "Project 3",
         "description": "Description for detail 3",
-        "image": "/path/to/detail3-image.jpg",
+        "image": "/public/category/main.png",
         "liveLink": "https://live-link-to-project-3.com",
         "sourceCodeLink": "https://source-code-link-to-project-3.com"
       }

@@ -10,8 +10,8 @@ const WhyWork = () => {
             </div>
 
             {/* div 2  */}
-            <div>
-                <div>
+            <div className="">
+                <div >
                     <h1 style={{ color: '#F2F2F2', fontFamily: 'Inter', fontSize: '36px', fontStyle: 'normal', fontWeight: '400', lineHeight: 'normal', width: '310px', height: '44px' }}>
                         Focus on Quality
                     </h1>
@@ -20,7 +20,7 @@ const WhyWork = () => {
                     </h6>
                 </div>
 
-                <div>
+                <div className='-mt-20'>
                 <h1 style={{ color: '#F2F2F2', fontFamily: 'Inter', fontSize: '36px', fontStyle: 'normal', fontWeight: '400', lineHeight: 'normal', width: '470px', height: '44px' }}>
                 Adaptable and Up-to Date
                     </h1>
@@ -29,7 +29,7 @@ const WhyWork = () => {
                     </h6>
                 </div>
 
-                <div>
+                <div  className='-mt-20'>
                 <h1 style={{ color: '#F2F2F2', fontFamily: 'Inter', fontSize: '36px', fontStyle: 'normal', fontWeight: '400', lineHeight: 'normal', width: '310px', height: '44px' }}>
                 Team-Driven
                     </h1>
