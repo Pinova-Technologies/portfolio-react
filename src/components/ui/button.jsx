@@ -1,4 +1,3 @@
-
 import { Slot } from "@radix-ui/react-slot"
 import { cva } from "class-variance-authority";
 
@@ -19,7 +18,7 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
         ghost: "hover:bg-[#E6D62D] hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-         newVariant: "inline-flex items-center hover:underline justify-center gap-20 p-5 rounded-[10px] text-[#E6D62D] font-['Anta'] text-[48px] font-normal leading-normal",
+        newVariant: "inline-flex items-center  underline justify-center gap-20 px-10 py-5.5 rounded-[5px] text-[#E6D62D] font-['Anta'] text-[48px] font-normal leading-normal hover:text-[#292929] hover:bg-[#E6D62D] hover:underline",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

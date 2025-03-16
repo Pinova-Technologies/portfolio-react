@@ -1,27 +1,26 @@
 [
-    {
-      "name": "Bootstrap",
-      "icon": "/public/s-card.svg"
-    },
-    {
-      "name": "Tailwind",
-     "icon": "/public/s-card.svg"
-    },
-    {
-      "name": "React",
-      "icon": "/public/s-card.svg"
-    },
-    {
-      "name": "Vue",
-      "icon": "/public/s-card.svg"
-    },
-    {
-      "name": "Angular",
-      "icon": "/public/s-card.svg"
-    },
-    {
-      "name": "Svelte",
-      "icon": "/public/s-card.svg"
-    }
-  ]
-  
+  {
+    "name": "Bootstrap",
+    "icon": "FaBootstrap"
+  },
+  {
+    "name": "Tailwind",
+    "icon": " SiTailwindcss "
+  },
+  {
+    "name": "React",
+    "icon": "FaReact"
+  },
+  {
+    "name": "Vue",
+    "icon": "FaVuejs"
+  },
+  {
+    "name": "Angular",
+    "icon": "FaAngular"
+  },
+  {
+    "name": "Svelte",
+    "icon": "FaSvelte"
+  }
+]

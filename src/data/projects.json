@@ -2,7 +2,7 @@
   {
     "name": "HTML/CSS",
     "link": "https://link-to-project-1.com",
-    "image": "/path/to/html-css-image.jpg",
+    "image": "/public/js.png",
     "methodology": "A little info on usage and methodologies for HTML/CSS.",
     "details": [
       {
@@ -39,7 +39,7 @@
   {
     "name": "JAVASCRIPT",
     "link": "https://link-to-project-2.com",
-    "image": "/path/to/javascript-image.jpg",
+    "image": "/public/js.png",
     "methodology": "A little info on usage and methodologies for JavaScript.",
     "details": [
       {

@@ -1,9 +1,15 @@
-import Footer from './Footer'
-import NavBar from './pages/NavBar'
-import Projects from './pages/Projects'
-import WhyWork from './pages/WhyWork'
+import { useRef } from 'react';
+import Footer from './Footer';
+import NavBar from './pages/NavBar';
+import Projects from './pages/Projects';
+import WhyWork from './pages/WhyWork';
 
 function App() {
+  const footerRef = useRef(null);
+
+  const scrollToFooter = () => {
+    footerRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -57,7 +63,10 @@ function App() {
               Focused on clean code and seamless user experiences, I transform ideas into bold digital solutions.
             </p>
             <div className="mt-8 flex justify-center space-x-4">
-              <button className="bg-[#E6D62D] text-black px-6 py-3 font-semibold rounded-md shadow-md">
+              <button
+                className="bg-[#E6D62D] text-black px-6 py-3 font-semibold rounded-md shadow-md"
+                onClick={scrollToFooter}
+              >
                 GET IN TOUCH
               </button>
               <a href="/public/CV-Humira-Dev.pdf" download className="bg-gray-200 text-black px-6 py-3 font-semibold rounded-md shadow-md">
@@ -69,9 +78,9 @@ function App() {
       </div>
       <Projects />
       <WhyWork />
-      <Footer />
+      <Footer ref={footerRef} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

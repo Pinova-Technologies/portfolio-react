@@ -1,20 +1,35 @@
+import React from 'react';
+import { FaBootstrap, FaReact, FaVuejs, FaAngular } from 'react-icons/fa';
+import { SiTailwindcss, SiSvelte } from 'react-icons/si';
+import smallCardData from '../data/smallcard.json';
 
-import cardData from '../data/smallcard.json'; // Import the JSON data
+const iconMapping = {
+  FaBootstrap: FaBootstrap,
+  SiTailwindcss: SiTailwindcss,
+  FaReact: FaReact,
+  FaVuejs: FaVuejs,
+  FaAngular: FaAngular,
+  FaSvelte: SiSvelte,
+};
 
-const SmallCards = () => {
+const SmallCard = () => {
   return (
-<div className="flex justify-center gap-4 bg-[#292929] p-6">
-      {cardData.map((card, index) => (
-        <div
-          key={index}
-          className="inline-flex w-[146px] h-[51px] px-[14px] py-[9px] items-center gap-[15px] bg-[#7A7A7A] rounded-lg shadow-md"
-        >
-          <img src={card.icon} alt={card.name} className="w-6 h-6" />
-          <span className="text-white font-medium">{card.name}</span>
-        </div>
-      ))}
+    <div className=" flex justify-center gap-20 bg-[#292929] p-6 ">
+      {smallCardData.map((item, index) => {
+        const IconComponent = iconMapping[item.icon];
+        if (!IconComponent) {
+          console.error(`Icon ${item.icon} not found in iconMapping`);
+          return null;
+        }
+        return (
+          <div key={index} className="inline-flex w-[146px] h-[51px] px-[14px] py-[9px] items-center gap-[15px] bg-[#7A7A7A] rounded-lg shadow-md">
+            <IconComponent size={32} />
+            <p className='text-white font-medium'>{item.name}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-export default SmallCards;
+export default SmallCard;
