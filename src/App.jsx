@@ -3,6 +3,7 @@ import Footer from './Footer';
 import NavBar from './pages/NavBar';
 import Projects from './pages/Projects';
 import WhyWork from './pages/WhyWork';
+import { FaArrowDown } from 'react-icons/fa';
 
 function App() {
   const footerRef = useRef(null);
@@ -36,7 +37,7 @@ function App() {
           <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
 
           {/* Content */}
-          <div className="relative text-left xl p-10">
+          <div className="relative xl py-10 mt-20 w-11/12 mx-auto">
             <h1
               style={{
                 fontFamily: "'Anta', sans-serif",
@@ -47,22 +48,20 @@ function App() {
             >
               Humira <br /><span style={{ fontFamily: "'Anta', sans-serif" }}>Alam</span>
             </h1>
-            <p className="text-lg mt-4">Detailed-oriented Frontend Developer</p>
-            <p
-              className="mt-6 text-gray-300 text-center font-normal"
-              style={{
-                fontFamily: 'Lato',
-                fontSize: '18px',
-                fontStyle: 'normal',
-                fontWeight: '400',
-                lineHeight: '25px'
-              }}
+            <p className="text-4xl mt-4">Detailed-oriented <br /> Frontend Developer</p>
+            <div className='flex justify-between items-center gap-20 mt-10 w-full'>
+              <span className='w-2/6 '>
+                <FaArrowDown className='text-7xl' />
+                </span>
+              <p
+              className="text-gray-300 lato text-lg leading-6 font-normal w-2/6"
+              
             >
-              I am a frontend developer who builds intuitive <br />
+              I am a frontend developer who builds intuitive 
               and efficient web interfaces with precision and independence.
               Focused on clean code and seamless user experiences, I transform ideas into bold digital solutions.
             </p>
-            <div className="mt-8 flex justify-center space-x-4">
+            <div className="space-y-4 w-2/6 flex flex-col items-start">
               <button
                 className="bg-[#E6D62D] text-black px-6 py-3 font-semibold rounded-md shadow-md"
                 onClick={scrollToFooter}
@@ -72,6 +71,7 @@ function App() {
               <a href="/public/CV-Humira-Dev.pdf" download className="bg-gray-200 text-black px-6 py-3 font-semibold rounded-md shadow-md">
                 RESUME
               </a>
+            </div>
             </div>
           </div>
         </div>

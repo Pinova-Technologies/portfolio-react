@@ -21,8 +21,8 @@ function Projects() {
 
   return (
     <div  id="projects" className="bg-[#292929] w-full min-h-screen" >
-      <div className="">
-      <h2 className="text-3xl font-normal mx-5 mb-4 pt-5" style={{ color: "#F2F2F2" }}>My Projects</h2>
+      <div className="w-11/12 mx-auto pt-10">
+      <h2 className="text-3xl font-normal mx-5 mb-4 pt-5 text-[#F2F2F2]">My Projects</h2>
         <div className="project-list flex justify-around pt-[80px]">
           {projects.slice(0, 4).map((project, index) => (
             <div className="project-item" key={index}>

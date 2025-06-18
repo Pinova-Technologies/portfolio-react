@@ -4,7 +4,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { IoMailOpen } from "react-icons/io5";
 import emailjs from 'emailjs-com';
 
-const Footer = forwardRef((props, ref) => {
+const Footer = forwardRef((props, ref)=> {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -20,7 +20,7 @@ const Footer = forwardRef((props, ref) => {
     e.target.reset();
   };
 
-  return (
+  return  (
     <footer ref={ref} className="footer">
       <div id='contact' className="bg-[#292929] w-full min-h-9/10 flex justify-around">
         <div className="shadow-md rounded-lg" style={{ backgroundColor: '#292929' }}>
@@ -96,6 +96,8 @@ const Footer = forwardRef((props, ref) => {
       </div>
     </footer>
   );
+
 });
+
 
 export default Footer;

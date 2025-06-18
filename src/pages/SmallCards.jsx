@@ -1,20 +1,33 @@
 import React from 'react';
-import { FaBootstrap, FaReact, FaVuejs, FaAngular } from 'react-icons/fa';
-import { SiTailwindcss, SiSvelte } from 'react-icons/si';
+import { FaBootstrap, FaReact, FaHtml5, FaCss3Alt, FaSass, FaWordpress } from 'react-icons/fa';
+import { SiShadcnui, SiRedux, SiZod } from 'react-icons/si';
+import { RiTailwindCssFill, RiJavascriptFill, RiNextjsFill } from "react-icons/ri";
+import { AiOutlineApi } from "react-icons/ai";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import smallCardData from '../data/smallcard.json';
 
 const iconMapping = {
+  FaHtml5: FaHtml5,
+  FaCss3Alt: FaCss3Alt,
+  FaSass: FaSass,
   FaBootstrap: FaBootstrap,
-  SiTailwindcss: SiTailwindcss,
+  RiTailwindCssFill: RiTailwindCssFill,
+  SiShadcnui: SiShadcnui,
+  RiJavascriptFill: RiJavascriptFill,
   FaReact: FaReact,
-  FaVuejs: FaVuejs,
-  FaAngular: FaAngular,
-  FaSvelte: SiSvelte,
+  SiRedux: SiRedux,
+  BiLogoTypescript: BiLogoTypescript,
+  RiNextjsFill: RiNextjsFill,
+  TbBrandFramerMotion: TbBrandFramerMotion,
+  SiZod: SiZod,
+  AiOutlineApi: AiOutlineApi,
+  FaWordpress: FaWordpress
 };
 
 const SmallCard = () => {
   return (
-    <div className=" flex justify-center gap-20 bg-[#292929] p-6 ">
+    <div className="w-11/12 mx-auto flex justify-center flex-wrap gap-10 bg-[#292929] py-6">
       {smallCardData.map((item, index) => {
         const IconComponent = iconMapping[item.icon];
         if (!IconComponent) {
@@ -22,7 +35,7 @@ const SmallCard = () => {
           return null;
         }
         return (
-          <div key={index} className="inline-flex w-[146px] h-[51px] px-[14px] py-[9px] items-center gap-[15px] bg-[#7A7A7A] rounded-lg shadow-md">
+          <div key={index} className="inline-flex h-[51px] px-[14px] py-[9px] items-center gap-[10px] bg-[#7A7A7A] rounded-lg shadow-md">
             <IconComponent size={32} />
             <p className='text-white font-medium'>{item.name}</p>
           </div>

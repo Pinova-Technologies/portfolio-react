@@ -1,26 +1,62 @@
 [
   {
+    "name": "HTML5",
+    "icon": "FaHtml5"
+  },
+  {
+    "name": "CSS3",
+    "icon": "FaCss3Alt"
+  },
+  {
+    "name": "Sass",
+    "icon": "FaSass"
+  },
+  {
     "name": "Bootstrap",
     "icon": "FaBootstrap"
   },
   {
-    "name": "Tailwind",
-    "icon": " SiTailwindcss "
+    "name": "TailwindCSS",
+    "icon": "RiTailwindCssFill"
+  },
+  {
+    "name": "Shadcn/ui",
+    "icon": "SiShadcnui"
+  },
+  {
+    "name": "JavaScript",
+    "icon": "RiJavascriptFill"
   },
   {
     "name": "React",
     "icon": "FaReact"
   },
   {
-    "name": "Vue",
-    "icon": "FaVuejs"
+    "name": "Redux Toolkit",
+    "icon": "SiRedux"
   },
   {
-    "name": "Angular",
-    "icon": "FaAngular"
+    "name": "TypeScript",
+    "icon": "BiLogoTypescript"
   },
   {
-    "name": "Svelte",
-    "icon": "FaSvelte"
+    "name": "Next.js",
+    "icon": "RiNextjsFill"
+  },
+  {
+    "name": "FramerMotion",
+    "icon": "TbBrandFramerMotion"
+  },
+  {
+    "name": "Zod",
+    "icon": "SiZod"
+  },
+  {
+    "name": " RESTAPIs",
+    "icon": "AiOutlineApi"
+  },
+  {
+    "name": "WordPress Elementor",
+    "icon": "FaWordpress"
   }
 ]
