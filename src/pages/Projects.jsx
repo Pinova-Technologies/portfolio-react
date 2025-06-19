@@ -23,20 +23,20 @@ function Projects() {
     <div  id="projects" className="bg-[#292929] w-full min-h-screen" >
       <div className="w-11/12 mx-auto pt-10">
       <h2 className="text-3xl font-normal mx-5 mb-4 pt-5 text-[#F2F2F2]">My Projects</h2>
-        <div className="project-list flex justify-around pt-[80px]">
-          {projects.slice(0, 4).map((project, index) => (
+        <div className="project-list flex flex-wrap justify-around gap-5 lg:gap-10 pt-5 lg:pt-[80px]">
+          {projects.map((project, index) => (
             <div className="project-item" key={index}>
               <Button variant="newVariant" onClick={() => handleOpenModal(project)}>{project.name}</Button>
             </div>
           ))}
         </div>
-        <div className="project-list flex justify-around pt-12">
+        {/* <div className="project-list flex justify-around pt-12">
           {projects.slice(4).map((project, index) => (
             <div className="project-item" key={index + 3}>
               <Button variant="newVariant" onClick={() => handleOpenModal(project)}>{project.name}</Button>
             </div>
           ))}
-        </div>
+        </div> */}
         <Tool />
         <SmallCards />
       </div>

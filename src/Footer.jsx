@@ -22,8 +22,8 @@ const Footer = forwardRef((props, ref)=> {
 
   return  (
     <footer ref={ref} className="footer">
-      <div id='contact' className="bg-[#292929] w-full min-h-9/10 flex justify-around">
-        <div className="shadow-md rounded-lg" style={{ backgroundColor: '#292929' }}>
+      <div id='contact' className="bg-[#292929] w-full flex flex-col md:flex-row justify-around">
+        <div className="shadow-md rounded-lg bg-[#292929] px-5">
           <h2 className="text-2xl font-bold mb-4 text-white">Contact</h2>
           <form onSubmit={sendEmail}>
             <div className="mb-4">
@@ -68,20 +68,20 @@ const Footer = forwardRef((props, ref)=> {
         </div>
 
         <div>
-          <div style={{ color: '#F2F2F2', textAlign: 'right', fontFamily: 'Lato', fontSize: '24px', fontStyle: 'normal', fontWeight: '700', lineHeight: '35px' }}>
+          <div className='text-[#F2F2F2] text-center md:text-right lato text-2xl font-bold leading-[35px] mt-2'>
             <h4>Email</h4>
           </div>
-          <div className="flex justify-end items-end" style={{ color: '#F2F2F2' }}>
+          <div className="flex justify-center md:justify-end items-end text-[#F2F2F2]">
             <a href="mailto:humira87@gmail.com" target="_blank" rel="noopener noreferrer">
               <IoMailOpen size={32} />
             </a>
           </div>
 
-          <div className="mt-5" style={{ color: '#F2F2F2', textAlign: 'right', fontFamily: 'Lato', fontSize: '24px', fontStyle: 'normal', fontWeight: '700', lineHeight: '35px' }}>
+          <div className="mt-5 text-[#F2F2F2] text-center md:text-right lato text-2xl font-bold leading-[35px] mb-5">
             <h4>Social Media</h4>
           </div>
 
-          <div className="flex justify-center space-x-4 mt-2" style={{ color: '#F2F2F2' }}>
+          <div className="flex justify-center space-x-4 mt-2 text-[#F2F2F2] mb-5">
             <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={32} />
             </a>

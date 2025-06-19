@@ -27,7 +27,7 @@ const iconMapping = {
 
 const SmallCard = () => {
   return (
-    <div className="w-11/12 mx-auto flex justify-center flex-wrap gap-10 bg-[#292929] py-6">
+    <div className="w-11/12 mx-auto flex justify-center flex-wrap gap-5 bg-[#292929] py-6">
       {smallCardData.map((item, index) => {
         const IconComponent = iconMapping[item.icon];
         if (!IconComponent) {
@@ -35,7 +35,7 @@ const SmallCard = () => {
           return null;
         }
         return (
-          <div key={index} className="inline-flex h-[51px] px-[14px] py-[9px] items-center gap-[10px] bg-[#7A7A7A] rounded-lg shadow-md">
+          <div key={index} className="inline-flex h-[40px] px-[14px] py-[9px] items-center gap-[10px] bg-[#7A7A7A] rounded-lg shadow-md">
             <IconComponent size={32} />
             <p className='text-white font-medium'>{item.name}</p>
           </div>
