@@ -82,9 +82,6 @@ const Footer = forwardRef((props, ref)=> {
           </div>
 
           <div className="flex justify-center space-x-4 mt-2 text-[#F2F2F2] mb-5">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook size={32} />
-            </a>
             <a href="https://www.linkedin.com/in/humiralam/" target="_blank" rel="noopener noreferrer">
               <BsLinkedin size={32} />
             </a>
